@@ -1,5 +1,5 @@
-# pugWithWebpack
-## перед запуском нужно выполнить 
-1) `npm install`
-2) `npm run dev`
-готовые файлы появятся в папке `dist` 
+Проект динамической витрины на основании данных, 
+полученных с сервера в виде JSON файла.
+
+Ссылка на проект GitHub Pages:
+https://anatolykazarin.github.io/vitrine/dist/
