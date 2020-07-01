@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="description" content="About this site")
+    meta(name="keywords" content="")
+    meta(name="viewport" content="width=device-width", initial-scale=1)
+    link(rel="icon" href="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png")
+    title Витрина
+    link(rel="stylesheet" type="text/css" href="main.css")
+    script(src="main.js")
+  body
+    .wrapper
+      p.jsoninfo
+      h1.main-header Витрина
+      .select-wrapper
+        select.select-subjects(name="subjects")
+          option(value="all" checked) Все предметы
+          //- option(value="algebra") Алгебра
+          //- option(value="english") Английский язык
+          //- option(value="biology") Биология
+          //- option(value="geography") География
+          //- option(value="geometry") Геометрия
+          //- option(value="demo") Демо-версия
+          //- option(value="information") Информатика
+          //- option(value="history") История
+          //- option(value="literature") Литература
+          //- option(value="maths") Математика
+          //- option(value="social") Обществознание
+          //- option(value="environment") Окружающий мир
+          //- option(value="robotics") Робототехника
+          //- option(value="rusian") Русский язык
+          //- option(value="physics") Физика
+          //- option(value="chemistry") Химия
+        select.select-genre(name="genres")
+          option(value="all" checked) Все жанры
+          //- option(value="demo") Демо
+          //- option(value="taskbook") Задачник
+          //- option(value="vpr-preparation") Подготовка к ВПР
+          //- option(value="ege-preparation") Подготовка к ЕГЭ
+          //- option(value="workbook") Рабочая тетрадь
+        select.select-class(name="classes")
+          option(value="all" checked) Все классы
+          //- option(value="1") 1
+          //- option(value="2") 2
+          //- option(value="3") 3
+          //- option(value="4") 4
+          //- option(value="5") 5
+          //- option(value="6") 6
+          //- option(value="7") 7
+          //- option(value="8") 8
+          //- option(value="9") 9
+          //- option(value="10") 10
+          //- option(value="social") 11 
+        form
+          .typeahead__container
+            .typeahead__field
+              .typeahead__query
+                input.js-typeahead(name="q" autocomplete="off" placeholder="Поиск")     
+        .toggle-wrapper
+          span.toggle-title Цена:
+          .onoff.onoff-on
+      ul.shop__item-list
+
+        

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About this site">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="icon" href="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png">
+    <title>Витрина</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p class="jsoninfo"></p>
+      <h1 class="main-header">Витрина</h1>
+      <div class="select-wrapper">
+        <select class="select-subjects" name="subjects">
+          <option value="all" checked>Все предметы</option>
+        </select>
+        <select class="select-genre" name="genres">
+          <option value="all" checked>Все жанры</option>
+        </select>
+        <select class="select-class" name="classes">
+          <option value="all" checked>Все классы</option>
+        </select>
+        <form>
+          <div class="typeahead__container">
+            <div class="typeahead__field">
+              <div class="typeahead__query">
+                <input class="js-typeahead" name="q" autocomplete="off" placeholder="Поиск">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="toggle-wrapper"><span class="toggle-title">Цена:</span>
+          <div class="onoff onoff-on"></div>
+        </div>
+      </div>
+      <ul class="shop__item-list"></ul>
+    </div>
+  </body>
+</html>
